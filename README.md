@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Travel booking platform
+## Context
+You are a developer in a start-up company tasked with creating a travel booking platform. The customer wants a web application that allows users to search for destinations, view travel details and book trips.
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Learning objectives
+- Understand and apply the principles of React and Redux
+- Manage application state with Redux
+- Use functional components and React hooks
+- Manage routes with React Router
+- Consuming a REST API
 
-## Available Scripts
+## Features
+1. Home page: Displays a list of popular destinations with image, name and brief description.
+2. Search page: Allows users to search for destinations by location and date.
+3. Trip details page: Displays trip details, including location, date, price, itinerary and photos.
+4. Booking page: Allows users to book a trip, enter personal information and pay.
+5. Authentication: Users must be able to create an account with an e-mail address and password, log in to their account, and reset their password if they forget it.
+6. Account management : Once logged in, users must be able to view and modify their profile information, view their past and future bookings, and cancel their future bookings.
+## Constraints
+- The application must be responsive and work on different devices and screen sizes.
+- The application must handle errors and display appropriate messages to users.
+- The application must have good performance and user experience.
 
-In the project directory, you can run:
+## Design constraints
+- Colors: Use a color palette that includes blue (#007BFF), light gray (#F8F9FA) and dark gray (#343A40).
+- Logo: The logo should be a combination of a globe and an airplane.
+- Typography: Use a modern sans serif font such as 'Roboto' or 'Arial'.
 
-### `npm start`
+## Suggested libraries
+7. React Router
+8. Redux Toolkit
+9. Axios
+10. Styled Components
+11. React Bootstrap
+12. Formik
+13. Passport.js
+14. bcrypt.js
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Livraison
+- Source code on GitHub
+- Application deployed on a service such as Netlify or Vercel
+- Project documentation (README)

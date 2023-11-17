@@ -1,0 +1,46 @@
+.caroussel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px; 
+    overflow: hidden;
+    position: relative;
+    margin:20px;
+  }
+  
+  .caroussel img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    transition: transform 0.5s ease-in-out;
+    object-fit: contain;
+  }
+  .caroussel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .caroussel button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .caroussel button:disabled {
+    display: none;
+  }
+  
+  .caroussel .prev {
+    left: 10px;
+  }
+  
+  .caroussel .next {
+    right: 10px;
+  }
+  

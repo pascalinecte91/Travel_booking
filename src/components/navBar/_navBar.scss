@@ -1,38 +1,86 @@
-/* Navbar.scss */
-
 .navbar {
-    background-color: #007BFF;
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ded4e7;
+
+  &__header {
+    width: 11rem;
+    height: 9rem;
+    margin-left: 3rem;
+  }
+
+  &__list {
+    list-style-type: none;
+    gap: 7rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    justify-content: space-around;
+    width: 100%;
+    margin-right: 3rem;
+    list-style-type: none;
+
+    a:hover {
+      color: red;
+    }
   }
-  
-  .nav-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+  &__item:nth-child(4) a:hover {
+    color: green;
+  }
+
+  &__navItem {
     display: flex;
+    gap: 2rem;
+
+    a {
+      text-decoration: none;
+    }
   }
-  
-  .nav-item {
-    margin-right: 20px;
+
+  &__item a span {
+    display: none;
   }
-  
-  .nav-item:last-child {
-    margin-right: 0;
+
+  &__list {
+    gap: inherit;
   }
-  
-  /* Styles for Links */
-  a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s;
+
+  .navbar__item svg {
+    display: block;
   }
-  
-  a:hover {
-    color: #F8F9FA;
+
+  &__header {
+    width: 6.5rem;
+    height: 5.5rem;
   }
-  
+}
+
+@media (min-width: 526px) {
+  .navbar {
+
+    &__item a span {
+      display: block;
+    }
+
+    .navbar__item svg {
+      display: none;
+    }
+
+    &__list {
+      gap: 7rem;
+    }
+  }
+}
+
+@media (max-width: 525px) {
+  .navbar {
+    &__header {
+      width: 3.5rem;
+      height: 2.5rem;
+      margin-left: 3rem;
+    }
+    &__item svg {
+      display: block;
+    }
+  }
+}

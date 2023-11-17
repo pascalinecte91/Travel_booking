@@ -1,12 +1,16 @@
-import './App.css';
-import React from 'react';
+
+import React, { lazy } from 'react';
 import { Routes, Route, HashRouter } from 'react-router-dom'; 
 import NavBar from 'components/navBar/NavBar.js';
-import HomePage from 'pages/home/HomePage.jsx';
+import Footer from 'components/footer/Footer.js';
+
+import "style/index.scss";
+const HomePage = lazy(() => import("pages/home/HomePage.jsx"))
 
 const App = () => {
   return (
     <HashRouter basename='/'> 
+  
     <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -15,6 +19,7 @@ const App = () => {
         <Route path="/search" element={<searchForm />} />
         <Route path="*" element={<error />} />
       </Routes>
+      <Footer />
     </HashRouter> 
   );
 }

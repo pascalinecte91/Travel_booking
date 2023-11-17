@@ -1,14 +1,15 @@
 @import "style/mixins";
 @import "style/setting";
 
-@import "components/navbar/navbar";
-@import "components/auth/login";
 @import "components/navBar/navBar";
+@import "components/caroussel/caroussel";
 
+@import "pages/auth/login";
 @import "pages/booking/booking";
 @import "pages/search/SearchForm";
 @import "pages/home/homePage";
 @import "pages/error/error";
 @import "pages/search/searchForm";
 @import "pages/visit/visit";
+
 

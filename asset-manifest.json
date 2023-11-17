@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Travel_booking/static/css/main.01446194.css",
+    "main.js": "/Travel_booking/static/js/main.31a18845.js",
+    "static/js/732.775e6af2.chunk.js": "/Travel_booking/static/js/732.775e6af2.chunk.js",
+    "static/media/url1.jpg": "/Travel_booking/static/media/url1.7205dd4378c6da1cf8cd.jpg",
+    "static/media/url2.jpg": "/Travel_booking/static/media/url2.8ad6ec0e477b73888cec.jpg",
+    "static/media/logo_sans_fond.png": "/Travel_booking/static/media/logo_sans_fond.ff26bb892fad826257ca.png",
+    "static/media/url3.jpg": "/Travel_booking/static/media/url3.d9debc240a68c5a423cc.jpg",
+    "static/media/circuit_indonesie.jpeg": "/Travel_booking/static/media/circuit_indonesie.dd2e9178845168774053.jpeg",
+    "index.html": "/Travel_booking/index.html",
+    "main.01446194.css.map": "/Travel_booking/static/css/main.01446194.css.map",
+    "main.31a18845.js.map": "/Travel_booking/static/js/main.31a18845.js.map",
+    "732.775e6af2.chunk.js.map": "/Travel_booking/static/js/732.775e6af2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01446194.css",
+    "static/js/main.31a18845.js"
+  ]
+}

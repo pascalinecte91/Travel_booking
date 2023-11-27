@@ -1,38 +1,65 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "assets/logo_sans_fond.png";
-import { FaHome, FaSearch, FaWalking, FaSignInAlt } from "react-icons/fa";
+import {
+  FaSearch,
+  FaWalking,
+  FaSignInAlt,
+  FaEnvelope,
+  FaSignOutAlt,
+} from "react-icons/fa";
 
-
-
-const NavBar  = () => {
+const NavBar = () => {
   return (
-    <>
-      <section className="navbar">
-        <img
-          src={logo} className="navbar__header"alt="logo de l application"/>
+    <nav className="navbar">
+      {/* Div pour les onglets des pages */}
+      <div className="navbar__tabs">
+        <img className="navbar__logo" src={logo} alt="Travel Booking Logo" />
+        <ul className="navbar__list">
+          <li className="navbar__item">
+            <NavLink to="/home">
+              <span>Home</span>
+            </NavLink>
+          </li>
+          <li className="navbar__item">
+            <NavLink to="/visit">
+              <span>Visit</span>
+              <FaWalking className="navbar__icon" />
+            </NavLink>
+          </li>
+          <li className="navbar__item">
+            <NavLink to="/search">
+              <span>Search</span>
+              <FaSearch className="navbar__icon" />
+            </NavLink>
+          </li>
+          <li className="navbar__item">
+            <NavLink to="/contact">
+              <FaEnvelope className="navbar__icon" />
+              <span>Contact</span>
+            </NavLink>
+          </li>
+        </ul>
+      </div>
 
-        <div className="navbar__navItem">
-          <ul className="navbar__list">
-            <li className="navbar__item">
-              <Link to="/"><FaHome /><span>HOME</span></Link>
-            </li>
-            <li className="navbar__item">
-              <Link to="search"><FaSearch /><span>SEARCH</span>
-              </Link>
-            </li>
-            <li className="navbar__item">
-              <Link to="visit"><span>VISIT</span><FaWalking />
-              </Link>
-            </li>
-            <li className="navbar__item">
-              <Link to="login"><span>LOGIN</span><FaSignInAlt />
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </>
+      {/* Div pour les liens de connexion */}
+      <div className="navbar__auth">
+        <ul className="navbar__list">
+          <li className="navbar__item">
+          <NavLink to="/login" className="navbar__item signin">
+              <span>Sign In</span>
+              <FaSignInAlt className="navbar__icon" />
+            </NavLink>
+          </li>
+          <li className="navbar__item">
+          <NavLink to="/logout" className="navbar__item signout">
+              <span>Sign Up</span>
+              <FaSignOutAlt className="navbar__icon" />
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 };
 

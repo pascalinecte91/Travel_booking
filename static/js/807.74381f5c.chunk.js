@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktravel_booking=self.webpackChunktravel_booking||[]).push([[807],{807:function(f,n,e){e.r(n),e.d(n,{default:function(){return u}});e(791);var r=e(184),t=function(){return(0,r.jsx)("div",{children:"fffffffffffffff"})},u=function(){return(0,r.jsxs)(r.Fragment,{children:["CONTACTEZ NOUS PAR CE FORMULAIRE\ud83c\udfbe",(0,r.jsx)(t,{})]})}}}]);
+//# sourceMappingURL=807.74381f5c.chunk.js.map

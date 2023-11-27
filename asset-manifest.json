@@ -1,20 +1,36 @@
 {
   "files": {
-    "main.css": "/Travel_booking/static/css/main.01446194.css",
-    "main.js": "/Travel_booking/static/js/main.31a18845.js",
-    "static/js/732.775e6af2.chunk.js": "/Travel_booking/static/js/732.775e6af2.chunk.js",
-    "static/media/url1.jpg": "/Travel_booking/static/media/url1.7205dd4378c6da1cf8cd.jpg",
-    "static/media/url2.jpg": "/Travel_booking/static/media/url2.8ad6ec0e477b73888cec.jpg",
+    "main.css": "/Travel_booking/static/css/main.47591e4c.css",
+    "main.js": "/Travel_booking/static/js/main.de996df7.js",
+    "static/js/841.eba8eba7.chunk.js": "/Travel_booking/static/js/841.eba8eba7.chunk.js",
+    "static/js/605.bb8153bc.chunk.js": "/Travel_booking/static/js/605.bb8153bc.chunk.js",
+    "static/js/646.90b2e449.chunk.js": "/Travel_booking/static/js/646.90b2e449.chunk.js",
+    "static/js/807.74381f5c.chunk.js": "/Travel_booking/static/js/807.74381f5c.chunk.js",
+    "static/js/622.08e986f4.chunk.js": "/Travel_booking/static/js/622.08e986f4.chunk.js",
+    "static/js/505.46f52956.chunk.js": "/Travel_booking/static/js/505.46f52956.chunk.js",
     "static/media/logo_sans_fond.png": "/Travel_booking/static/media/logo_sans_fond.ff26bb892fad826257ca.png",
-    "static/media/url3.jpg": "/Travel_booking/static/media/url3.d9debc240a68c5a423cc.jpg",
-    "static/media/circuit_indonesie.jpeg": "/Travel_booking/static/media/circuit_indonesie.dd2e9178845168774053.jpeg",
+    "static/media/ile_maurice.jpg": "/Travel_booking/static/media/ile_maurice.a348601288aad1e8a195.jpg",
+    "static/media/guadeloupe.jpg": "/Travel_booking/static/media/guadeloupe.aa1c68ef8b196bf3630e.jpg",
+    "static/media/sumatra.jpg": "/Travel_booking/static/media/sumatra.489700fb85937ed115f8.jpg",
+    "static/media/ile_caimens.webp": "/Travel_booking/static/media/ile_caimens.4b6c591aa0ccd54cec78.webp",
+    "static/media/indonesie_bali.jpg": "/Travel_booking/static/media/indonesie_bali.177ed2b56c7af88fbea5.jpg",
+    "static/media/mexique.jpg": "/Travel_booking/static/media/mexique.3815f4e942049d73b8c4.jpg",
+    "static/media/polinesie.jpg": "/Travel_booking/static/media/polinesie.2fcbae4543d6af877145.jpg",
+    "static/media/afrique_safari.jpg": "/Travel_booking/static/media/afrique_safari.ddff5f6d889fc35ac050.jpg",
+    "static/media/martinic.jpg": "/Travel_booking/static/media/martinic.e07f26156cdcdedcd6b5.jpg",
+    "static/media/thailande.jpg": "/Travel_booking/static/media/thailande.fd657da8bc36340d2752.jpg",
     "index.html": "/Travel_booking/index.html",
-    "main.01446194.css.map": "/Travel_booking/static/css/main.01446194.css.map",
-    "main.31a18845.js.map": "/Travel_booking/static/js/main.31a18845.js.map",
-    "732.775e6af2.chunk.js.map": "/Travel_booking/static/js/732.775e6af2.chunk.js.map"
+    "main.47591e4c.css.map": "/Travel_booking/static/css/main.47591e4c.css.map",
+    "main.de996df7.js.map": "/Travel_booking/static/js/main.de996df7.js.map",
+    "841.eba8eba7.chunk.js.map": "/Travel_booking/static/js/841.eba8eba7.chunk.js.map",
+    "605.bb8153bc.chunk.js.map": "/Travel_booking/static/js/605.bb8153bc.chunk.js.map",
+    "646.90b2e449.chunk.js.map": "/Travel_booking/static/js/646.90b2e449.chunk.js.map",
+    "807.74381f5c.chunk.js.map": "/Travel_booking/static/js/807.74381f5c.chunk.js.map",
+    "622.08e986f4.chunk.js.map": "/Travel_booking/static/js/622.08e986f4.chunk.js.map",
+    "505.46f52956.chunk.js.map": "/Travel_booking/static/js/505.46f52956.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.01446194.css",
-    "static/js/main.31a18845.js"
+    "static/css/main.47591e4c.css",
+    "static/js/main.de996df7.js"
   ]
 }

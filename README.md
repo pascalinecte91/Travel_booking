@@ -2,6 +2,19 @@
 ## Context
 You are a developer in a start-up company tasked with creating a travel booking platform. The customer wants a web application that allows users to search for destinations, view travel details and book trips.
 ---
+### Technologies: 
+![React](https://img.shields.io/badge/-React-%23282C34?logo=react&logoColor=%2361DAFB)
+![JavaScript](https://img.shields.io/badge/-JavaScript-%23F7DF1E?logo=javascript&logoColor=black&labelColor=%23F7DF1E&color=%23FFCE5A)
+![Sass](https://img.shields.io/badge/-Sass-%23CC6699?logo=sass&logoColor=white)
+![npm](https://img.shields.io/badge/-npm-%23CB3837?logo=npm&logoColor=white)
+![Redux](https://img.shields.io/badge/-Redux-%23764ABC?logo=redux&logoColor=white)
+![Node.js](https://img.shields.io/badge/-Node.js-%23339933?logo=node.js&logoColor=white)
+[![JSDoc](https://img.shields.io/badge/JSDoc-3.6.7-blue)](https://www.npmjs.com/package/jsdoc)
+[![React Icons](https://img.shields.io/badge/React%20Icons-4.2.0-orange)](https://www.npmjs.com/package/react-icons)
+![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-%23007ACC?logo=visual-studio-code&logoColor=white)
+[![Formik](https://img.shields.io/badge/Formik-v3.2.10-blue)](https://formik.org/)
+
+
 
 ## Learning objectives
 - Understand and apply the principles of React and Redux

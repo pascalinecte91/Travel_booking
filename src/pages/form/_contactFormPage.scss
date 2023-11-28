@@ -1,0 +1,17 @@
+section {
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    justify-content:   space-around;
+
+}
+@media screen and (max-width: 1024px) {
+    .contact {
+        width: 70%;
+        margin: auto;
+       flex-direction: column;
+       gap: 30px;
+}
+    
+
+} 

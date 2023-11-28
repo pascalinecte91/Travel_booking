@@ -1,20 +1,11 @@
 .navbar {
-  display: flex;
+  @include flexCentered;
   justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-image: linear-gradient(to right top, #845ec2, #ff6f91, #ff9671, #b1bedb,
-    #ffc75f, #41dfff, #f9f871);
 
-  &__home {
-    display: flex;
-    a {
-      text-decoration: none;
-      color: rgb(68, 67, 67);
-      font-weight: 600;
-    }
-  }
-  
+
+  padding: 1rem;
+  background-image: $navbar-bg;
+
   &__logo {
     width: 70px;
     height: 60px;
@@ -22,11 +13,7 @@
     @media (max-width: 500px) {
       width: 60px;
       height: 50px;
-    }}
-
-  &__title {
-    display: flex;
-    align-items: center;
+    }
   }
 
   &__tabs {
@@ -34,25 +21,21 @@
   }
 
   &__list {
-    list-style-type: none;
-    display: flex;
+    @include flexList;
     gap: 3rem;
     align-items: center;
 
     @media (max-width: 600px) {
-      gap: inherit;
+      gap: 1rem;
     }
-  
-    
 
     .navbar__item {
       a {
         text-decoration: none;
         color: rgb(68, 67, 67);
         font-weight: 600;
-        display: flex;
         align-items: center;
-        transition: transform 0.3s ease-in-out; // Ajout de la transition
+
         &:hover {
           transform: scale(1.1);
         }
@@ -61,10 +44,6 @@
           display: none;
           margin-right: 0.5rem;
           align-items: center;
-        }
-
-        span {
-          display: block;
         }
 
         &:hover {
@@ -86,31 +65,31 @@
       &.signout {
         @media (min-width: 525px) {
           display: flex;
-          border: 1px solid rgb(53, 51, 51);
-          padding: 0.5rem 0.5rem;
-          border-radius: 10px;
-          transition: transform 0.3s ease-in-out; // Ajout de la transition
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          padding: 0.8rem 1rem;
+          border-radius: 8px;
+          transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
           &:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
           }
+
         }
-        @media (min-width: 600px) and (max-width: 768px){
+
+        @media (min-width: 600px) and (max-width: 768px) {
           font-size: 12px;
-          background-color: #41dfff;
         }
       }
     }
   }
 
   @media (max-width: 525px) {
-    .navbar__list
-    .navbar__item a
-    .navbar__icon {
+    .navbar__list .navbar__item a .navbar__icon {
       display: block;
     }
 
-    .navbar__list
-    .navbar__item a span {
+    .navbar__list .navbar__item a span {
       display: none;
     }
   }

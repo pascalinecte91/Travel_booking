@@ -1,7 +1,13 @@
+import SignUpForm from "components/form/SignUpForm.js";
 import React from "react";
 
 const Logout = () => {
-  return <div>Logout</div>;
+  return (
+    <>
+  
+  <SignUpForm />
+  </>
+  )
 };
 
 export default Logout;

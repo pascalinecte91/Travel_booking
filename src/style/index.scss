@@ -3,14 +3,19 @@
 
 @import "components/navBar/navBar";
 @import "components/caroussel/caroussel";
-@import "components/form/form";
+@import "components/form/loginForm";
+@import "components/form/signUpForm";
+@import "components/map/contactMap";
+@import "components/form/contactForm";
 
-@import "pages/auth/login";
+
+
 @import "pages/booking/booking";
 @import "pages/search/searchForm";
 @import "pages/home/homePage";
 @import "pages/error/error";
 @import "pages/visit/visit";
-@import "pages/form/contactForm";
+@import "pages/form/contactFormPage";
+
 
 

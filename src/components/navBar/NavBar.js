@@ -1,18 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "assets/logo_sans_fond.png";
-import {
-  FaSearch,
-  FaWalking,
-  FaSignInAlt,
-  FaEnvelope,
-  FaSignOutAlt,
-} from "react-icons/fa";
+import {FaSearch,FaWalking,FaSignInAlt,FaEnvelope,FaSignOutAlt,} from "react-icons/fa";
+
+/**
+ * @Component de barre de navigation.
+ * @returns {JSX.Element} Le composant React de la barre de navigation.
+ */
 
 const NavBar = () => {
   return (
     <nav className="navbar">
-      {/* Div pour les onglets des pages */}
       <div className="navbar__tabs">
         <img className="navbar__logo" src={logo} alt="Travel Booking Logo" />
         <ul className="navbar__list">
@@ -42,12 +40,11 @@ const NavBar = () => {
         </ul>
       </div>
 
-      {/* Div pour les liens de connexion */}
       <div className="navbar__auth">
         <ul className="navbar__list">
           <li className="navbar__item">
           <NavLink to="/login" className="navbar__item signin">
-              <span>Sign In</span>
+              <span>Log In</span>
               <FaSignInAlt className="navbar__icon" />
             </NavLink>
           </li>

@@ -1,0 +1,15 @@
+// variables colors
+
+$navbar-bg:  linear-gradient(to right top, #845ec2, #ff6f91, #ff9671, #b1bedb, #ffc75f, #41dfff, #f9f871);
+
+// mixin display
+
+@mixin flexList{
+    display: flex;
+    list-style-type: none;
+}
+
+@mixin flexCentered {
+    display: flex;
+    align-items: center;
+}

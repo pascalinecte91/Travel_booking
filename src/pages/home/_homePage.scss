@@ -1,4 +1,8 @@
-.home {
-    display: flex;
-    
+.homePage {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  &--title  {
+    font-weight: 500;
+  }
 }

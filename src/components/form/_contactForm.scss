@@ -1,17 +1,28 @@
-formContact {
-    width:65%;
-    margin: auto;
+.formContact {
+  width: 70%;
+  margin: auto;
+  height: 400px;
+}
 
-}
 #message {
-    height:200px;
+  height: 200px;
 }
+
 @media screen and (max-width: 1024px) {
-    form {
-        width: 100%;
-        margin-top: 20px;
-    }
-    #message {
-        height:100px;
-    }
+  form {
+    margin-top: 20px;
+  }
+
+  #message {
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .formContact {
+    width: 90%;
+  }
+}
+input {
+  margin-right: 5px;
 }

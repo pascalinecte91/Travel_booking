@@ -1,13 +1,13 @@
 import SignUpForm from "components/form/SignUpForm.js";
 import React from "react";
 
-const Logout = () => {
+const SignUpPage = () => {
   return (
     <>
-  
+   <h2>Inscrivez-vous pour visiter notre site !</h2>
   <SignUpForm />
   </>
   )
 };
 
-export default Logout;
+export default SignUpPage;

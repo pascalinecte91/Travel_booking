@@ -1,6 +1,7 @@
 
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import { NavLink } from 'react-router-dom';
 
 const validatedSchema = Yup.object({
   userName: Yup.string().required('nom  d\' utilisateur requis'),
@@ -25,7 +26,7 @@ const LoginForm = () => {
       validatedSchema={validatedSchema}
       onSubmit={handleSubmit}
     >
-      <Form>
+      <Form className="loginForm">
         <label htmlFor="firstName">Nom d'utilisateur :</label>
         <Field type="text" id="firstName" name="firstName" />
         <ErrorMessage name="firstName" component="div" />
@@ -38,7 +39,7 @@ const LoginForm = () => {
         <label htmlFor="password">Mot de passe :</label>
         <Field type="password" id="password" name="password" />
         <ErrorMessage name="password" component="div" />
-
+        <NavLink to="/forgottenPasswordPage" className="editMP">Mot de passe oublié </NavLink>
         <button className="login" type="submit">Soumettre</button>
       </Form>
     </Formik>

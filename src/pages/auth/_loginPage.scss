@@ -1,0 +1,27 @@
+h2 {
+  display: flex;
+  justify-content: center;
+  background-image: $linear;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: growTitle 1s ease forwards;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  @include smart {
+    font-size: 16px;
+    padding-top: 10px;
+    margin-top: 10%;
+  }
+  @include tablet {
+    padding-top: 20px;
+    font-size: 20px;
+    margin-top: 20%;
+  }
+  @include desktop {
+    margin-top: 10%;
+  }
+  @include largeDesk {
+   margin-top: 10%;
+    font-size: 30px;
+  }
+}

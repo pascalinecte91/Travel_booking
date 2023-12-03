@@ -2,12 +2,13 @@
 import React from "react";
 import LoginForm from "components/form/LoginForm.js";
 
-const Login= () => {
+const LoginPage= () => {
   return (
     <>
+    <h2 className="loginPage">Connectez-vous !</h2>
       <LoginForm />
     </>
   );
 };
 
-export default Login;
+export default LoginPage;

@@ -1,7 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "assets/logo_sans_fond.png";
-import {FaSearch,FaWalking,FaSignInAlt,FaEnvelope,FaSignOutAlt,} from "react-icons/fa";
+import { FaHome }from "react-icons/fa";
+import { MdOutlineTravelExplore } from "react-icons/md";
+import { IoIosMail, IoIosLogIn, IoIosSave } from "react-icons/io";
+
+
 
 /**
  * @Component de barre de navigation.
@@ -15,25 +19,25 @@ const NavBar = () => {
         <img className="navbar__logo" src={logo} alt="Travel Booking Logo" />
         <ul className="navbar__list">
           <li className="navbar__item">
-            <NavLink to="/home">
+            <NavLink to="/homePage">
               <span>Home</span>
             </NavLink>
           </li>
           <li className="navbar__item">
-            <NavLink to="/visit">
+            <NavLink to="/visitPage">
               <span>Visit</span>
-              <FaWalking className="navbar__icon" />
+              <FaHome className="navbar__icon" />
             </NavLink>
           </li>
           <li className="navbar__item">
             <NavLink to="/search">
               <span>Search</span>
-              <FaSearch className="navbar__icon" />
+              <MdOutlineTravelExplore className="navbar__icon" />
             </NavLink>
           </li>
           <li className="navbar__item">
             <NavLink to="/contact">
-              <FaEnvelope className="navbar__icon" />
+              <IoIosMail className="navbar__icon" />
               <span>Contact</span>
             </NavLink>
           </li>
@@ -43,15 +47,15 @@ const NavBar = () => {
       <div className="navbar__auth">
         <ul className="navbar__list">
           <li className="navbar__item">
-          <NavLink to="/login" className="navbar__item signin">
+          <NavLink to="/loginPage" className="navbar__item signin">
               <span>Log In</span>
-              <FaSignInAlt className="navbar__icon" />
+              <IoIosLogIn className="navbar__icon" />
             </NavLink>
           </li>
           <li className="navbar__item">
-          <NavLink to="/logout" className="navbar__item signout">
+          <NavLink to="/signUp" className="navbar__item signout">
               <span>Sign Up</span>
-              <FaSignOutAlt className="navbar__icon" />
+              <IoIosSave className="navbar__icon" />
             </NavLink>
           </li>
         </ul>

@@ -20,7 +20,8 @@ const ContactMap = () => {
         const map = L.map('map').setView(parisCoordinates, 10);
     
         // Ajoute une couche de tuiles OpenStreetMap à la carte
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+        L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png').addTo(map);
+
     
         // Ajoute des marqueurs pour chaque succursale avec le nom et l'adresse dans le popup
         branchOffices.forEach((branch) => {

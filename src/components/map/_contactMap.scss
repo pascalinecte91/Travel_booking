@@ -1,14 +1,21 @@
 #map {
     margin: auto;
-    width: 25%;
+    width: 50%;
     height: 400px;
           
 }
 
-@media screen {
+@media screen and (max-width: 425px) {
     #map {
         width: 90%;
+        height: 300px;
        
     }
    
+}
+
+@media screen and (min-width: 1024px) {
+    #map {
+        width: 40%;
+    }
 }

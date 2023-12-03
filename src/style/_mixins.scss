@@ -1,15 +1,53 @@
 // variables colors
 
-$navbar-bg:  linear-gradient(to right top, #845ec2, #ff6f91, #ff9671, #b1bedb, #ffc75f, #41dfff, #f9f871);
+$linear: linear-gradient(
+  to right top,
+  #845ec2,
+  #ff6f91,
+  #ff9671,
+  #b1bedb,
+  #ffc75f,
+  #41dfff,
+  #f9f871
+);
 
 // mixin display
 
-@mixin flexList{
-    display: flex;
-    list-style-type: none;
+@mixin flexList {
+  display: flex;
+  list-style-type: none;
 }
 
 @mixin flexCentered {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
+
+// responsives
+
+$mart: 425px;
+$tablet: 768px;
+$desktop: 1024px;
+$largeDesk: 1220px;
+
+@mixin smart {
+  @media (max-width: 425px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+  @mixin largeDesk {
+    @media (min-width: 1220px) {
+      @content;
+    }
+  }
+

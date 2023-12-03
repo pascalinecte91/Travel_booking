@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
-import { connect } from 'react-redux';
-import { searchDestinations } from '../'; 
+import { Link } from 'react-router-dom';
 
-const SearchForm = ({ searchDestinations }) => {
+const SearchForm = () => {
   const [location, setLocation] = useState('');
   const [date, setDate] = useState('');
 
   const handleSearch = (e) => {
     e.preventDefault();
-    // Dispatchez l'action de recherche avec les valeurs spécifiées
-    searchDestinations({ location, date });
+    // Ici, tu peux ajouter une logique de recherche si nécessaire
+    // Pour l'instant, cela ne fait que vider les champs de recherche
+    setLocation('');
+    setDate('');
   };
 
   return (
@@ -36,12 +37,10 @@ const SearchForm = ({ searchDestinations }) => {
         </div>
         <button type="submit">Rechercher</button>
       </form>
+    
+      <Link to="/search">Aller à la page de recherche</Link>
     </div>
   );
 };
 
-const mapDispatchToProps = (dispatch) => ({
-  searchDestinations: (searchParams) => dispatch(searchDestinations(searchParams)),
-});
-
-export default connect(null, mapDispatchToProps)(SearchForm);
+export default SearchForm;

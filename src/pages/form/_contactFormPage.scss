@@ -1,17 +1,46 @@
-section {
+.contact {
+  &--title {
     display: flex;
+    justify-content: center;
+    font-weight: 500;
+    padding: 50px;
+    text-align: center;
+    animation: growTitle 1s ease forwards;
+    @include desktop {
+      font-size: 25px;
+    }
+    @include tablet {
+      font-size: 20px;
+    }
+    @include smart {
+      font-size: 15px;
+    }
+  }
+}
+
+section {
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+@media screen and (min-width: 425px) and (max-width: 1024px) {
+  .contact {
+    width: 100%;
     margin: auto;
-    margin-top: 20px;
-    justify-content:   space-around;
-
+    flex-direction: column;
+    gap: 30px;
+  }
 }
-@media screen and (max-width: 1024px) {
-    .contact {
-        width: 70%;
-        margin: auto;
-       flex-direction: column;
-       gap: 30px;
+@keyframes growTitle {
+  0% {
+    transform: scale(1); /* Taille initiale */
+    opacity: 0; /* Commencez invisible */
+  }
+  100% {
+    transform: scale(1.2); /* La taille finale souhaitée */
+    opacity: 1; /* Complètement visible */
+  }
 }
-    
 
-} 
+

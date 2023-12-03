@@ -1,6 +1,6 @@
 import React, { startTransition } from 'react';
 
-const Visit = () => {
+const VisitPage = () => {
   return (
     <div>
       {startTransition(() => {
@@ -10,4 +10,4 @@ const Visit = () => {
   );
 };
 
-export default Visit;
+export default VisitPage;

@@ -9,11 +9,14 @@ import "style/index.scss";
 
 // Importation des composants de manière asynchrone avec lazy loading
 const HomePage = lazy(() => import("pages/home/HomePage.jsx"))
-const Visit = lazy(() => import("pages/visit/Visit.jsx"));
-const SearchForm  = lazy(() => import("pages/search/SearchForm.jsx"));
-const ContactForm = lazy(() => import("pages/form/ContactFormPage.jsx"))
-const Login = lazy(() => import  ("pages/auth/Login.jsx"));
-const Logout = lazy(() => import  ("pages/auth/Logout.jsx"));
+const Visit = lazy(() => import("pages/visit/VisitPage.jsx"));
+const SearchFormPage  = lazy(() => import("pages/search/SearchFormPage.jsx"));
+const ContactFormPage = lazy(() => import("pages/form/ContactFormPage.jsx"))
+const LoginPage = lazy(() => import  ("pages/auth/LoginPage.jsx"));
+const SignUp = lazy(() => import  ("pages/auth/SignUpPage.jsx"));
+const ForgottenPasswordPage = lazy(() => import ("pages/forgotten/ForgottenPasswordPage.jsx"));
+
+
 
 
 /**
@@ -30,12 +33,13 @@ const App = () => {
   {/* Contenu principal avec gestion de la suspension pour le chargement asynchrone */}
     <Suspense fallback={null}>
       <Routes>
-      <Route path="/" element={<HomePage />}/>
+      <Route path="/homePage" element={<HomePage />}/>
       <Route path="/visit" element={<Visit />}/>
-      <Route path="/search" element={ <SearchForm />}/>
-      <Route path="/contact" element={<ContactForm /> }/>
-      <Route path="/login" element={ <Login />} />
-      <Route path="/logout" element={<Logout />} />
+      <Route path="/searchFormPage" element={ <SearchFormPage />}/>
+      <Route path="/contact" element={<ContactFormPage /> }/>
+      <Route path="/loginPage" element={ <LoginPage />} />
+      <Route path="/signUp" element={<SignUp />} />
+      <Route path="/forgottenPasswordPage" element={<ForgottenPasswordPage />} />
       <Route path="*" element={<Error />}/>
       </Routes>
       <Footer />

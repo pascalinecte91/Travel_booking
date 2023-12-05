@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktravel_booking=self.webpackChunktravel_booking||[]).push([[428],{428:function(e,n,r){r.r(n);r(2791);var t=r(184);n.default=function(){return(0,t.jsx)("div",{children:"ForgottenPasswordPage"})}}}]);
+//# sourceMappingURL=428.c9aa49b0.chunk.js.map

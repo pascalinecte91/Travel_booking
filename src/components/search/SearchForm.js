@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+
 
 const SearchForm = () => {
   const [location, setLocation] = useState('');
@@ -7,8 +7,7 @@ const SearchForm = () => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    // Ici, tu peux ajouter une logique de recherche si nécessaire
-    // Pour l'instant, cela ne fait que vider les champs de recherche
+    
     setLocation('');
     setDate('');
   };
@@ -38,7 +37,7 @@ const SearchForm = () => {
         <button type="submit">Rechercher</button>
       </form>
     
-      <Link to="/search">Aller à la page de recherche</Link>
+     
     </div>
   );
 };

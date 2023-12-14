@@ -3,11 +3,11 @@ import SearchForm from 'components/search/SearchForm.js';
 
 const SearchFormPage = () => {
   return (
-    <>
-    <div>SearchForm</div>
-    <SearchForm />
-    </>
-  )
-}
+    <div>
+      <SearchForm />
+      
+    </div>
+  );
+};
 
 export default SearchFormPage

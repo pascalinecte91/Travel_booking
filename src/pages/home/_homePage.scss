@@ -4,5 +4,17 @@
   align-items: center;
   &--title  {
     font-weight: 500;
+    margin: 2rem;
   }
 }
+.destination {
+display: flex;
+}
+
+.title  {
+  display: flex;
+    justify-content: center;
+    margin: 3rem;
+    font-weight: 500;
+   
+  }

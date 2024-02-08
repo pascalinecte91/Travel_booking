@@ -1,4 +1,19 @@
 
+.search {
+    max-width: 800px;
+    &__one {
+      display: flex;
+      flex-direction: row;
+    }
+    &__two {
+      display: flex;
+      flex-direction: column;
+    }
+label{
+  margin:auto;
+}
+  }
+  
 
 .search-form {
     h2 {
@@ -19,6 +34,7 @@
       }
     }
   
+  
     button {
       background-color: #007BFF;
       color: white;
@@ -28,3 +44,7 @@
     }
   }
   
+  .two {
+    display: flex;
+    flex-direction: column;
+  }

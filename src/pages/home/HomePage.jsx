@@ -1,36 +1,68 @@
-import Caroussel from "components/caroussel/Caroussel.js";
 import React from "react";
-import thailande from "assets/thailande.jpg";
-import sumatra from "assets/sumatra.jpg";
-import afrique from "assets/afrique_safari.jpg";
+import Chance from "chance";
+import Caroussel from "components/caroussel/Caroussel.js";
+import DestinationCard from "components/destination/DestinationCard.js";
 import guadeloupe from "assets/guadeloupe.jpg";
-import caimens from "assets/ile_caimens.webp";
-import mexique from "assets/mexique.jpg";
-import martinic from "assets/martinic.jpg";
-import bali from "assets/indonesie_bali.jpg";
-import maurice from "assets/ile_maurice.jpg";
+import thailande from "assets/thailande.jpg";
+import ile_maurice from "assets/ile_maurice.jpg";
+import martinique from "assets/martinique.jpg";
+import sumatra from "assets/sumatra.jpg";
+import polynesie from "assets/polynesie.jpg";
 import indonesie from "assets/indonesie_bali.jpg";
-import polinesie from "assets/polinesie.jpg";
+import afrique from "assets/afrique_safari.jpg";
+import mexique from "assets/mexique.jpg";
+
+import caimens from "assets/ile_caimens.webp";
+
+// Initialise Chance.js
+const chance = new Chance();
+
+// Tableau des noms de destinations possibles
+const destinationNames = ["Guadeloupe", "Martinique", "Polynesie", "Sumatra"];
+
+// Générer les données aléatoires pour chaque destination
+const destinations = destinationNames.map((name) => ({
+  image: chance.pickone([
+    thailande,
+    sumatra,
+    afrique,
+    guadeloupe,
+    caimens,
+    martinique,
+    mexique,
+    ile_maurice,
+    indonesie,
+    polynesie,
+  ]), // Choix aléatoire d'une image parmi les images disponibles
+  title: name,
+  description: chance.sentence({ words: 10 }), // Générer une phrase aléatoire avec 10 mots
+}));
 
 const HomePage = () => {
   const images = [
     thailande,
     sumatra,
     afrique,
-    bali,
     guadeloupe,
     caimens,
-    martinic,
+    martinique,
     mexique,
-    maurice,
+    ile_maurice,
     indonesie,
-    polinesie,
+    polynesie,
   ];
+
   return (
     <>
       <section className="homePage">
         <h1 className="homePage--title">Choisissez une destination</h1>
         <Caroussel images={images} />
+      </section>
+      <h1 className="title">Destinations populaires</h1>
+      <section className="destination">
+        {destinations.map((destination, index) => (
+          <DestinationCard key={index} destination={destination} />
+        ))}
       </section>
     </>
   );

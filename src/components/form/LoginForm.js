@@ -19,7 +19,7 @@ const LoginForm = () => {
     
     <Formik
       initialValues={{
-        usertName: "",
+        userName: "",
         password: "",
         email: "",
       }}

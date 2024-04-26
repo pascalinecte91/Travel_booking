@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Travel_booking/static/css/main.02b3c324.css",
-    "main.js": "/Travel_booking/static/js/main.9c8e51d9.js",
-    "static/js/196.bf491db6.chunk.js": "/Travel_booking/static/js/196.bf491db6.chunk.js",
+    "main.css": "/Travel_booking/static/css/main.897ba7d6.css",
+    "main.js": "/Travel_booking/static/js/main.9aaa20b1.js",
+    "static/js/196.ec5e4f24.chunk.js": "/Travel_booking/static/js/196.ec5e4f24.chunk.js",
     "static/js/324.a36549a1.chunk.js": "/Travel_booking/static/js/324.a36549a1.chunk.js",
-    "static/js/307.bfe40dc3.chunk.js": "/Travel_booking/static/js/307.bfe40dc3.chunk.js",
+    "static/js/253.93a37699.chunk.js": "/Travel_booking/static/js/253.93a37699.chunk.js",
     "static/css/95.e984fdfd.chunk.css": "/Travel_booking/static/css/95.e984fdfd.chunk.css",
     "static/js/95.77dd085e.chunk.js": "/Travel_booking/static/js/95.77dd085e.chunk.js",
     "static/js/681.b9892e98.chunk.js": "/Travel_booking/static/js/681.b9892e98.chunk.js",
     "static/js/913.016e2a66.chunk.js": "/Travel_booking/static/js/913.016e2a66.chunk.js",
     "static/js/428.c9aa49b0.chunk.js": "/Travel_booking/static/js/428.c9aa49b0.chunk.js",
-    "static/js/17.88726b2f.chunk.js": "/Travel_booking/static/js/17.88726b2f.chunk.js",
+    "static/js/17.7a3754a0.chunk.js": "/Travel_booking/static/js/17.7a3754a0.chunk.js",
     "static/js/284.574f1d2a.chunk.js": "/Travel_booking/static/js/284.574f1d2a.chunk.js",
     "static/js/545.b457743e.chunk.js": "/Travel_booking/static/js/545.b457743e.chunk.js",
     "static/media/logo_sans_fond.png": "/Travel_booking/static/media/logo_sans_fond.ff26bb892fad826257ca.png",
@@ -25,22 +25,22 @@
     "static/media/martinique.jpg": "/Travel_booking/static/media/martinique.e07f26156cdcdedcd6b5.jpg",
     "static/media/thailande.jpg": "/Travel_booking/static/media/thailande.fd657da8bc36340d2752.jpg",
     "index.html": "/Travel_booking/index.html",
-    "main.02b3c324.css.map": "/Travel_booking/static/css/main.02b3c324.css.map",
-    "main.9c8e51d9.js.map": "/Travel_booking/static/js/main.9c8e51d9.js.map",
-    "196.bf491db6.chunk.js.map": "/Travel_booking/static/js/196.bf491db6.chunk.js.map",
+    "main.897ba7d6.css.map": "/Travel_booking/static/css/main.897ba7d6.css.map",
+    "main.9aaa20b1.js.map": "/Travel_booking/static/js/main.9aaa20b1.js.map",
+    "196.ec5e4f24.chunk.js.map": "/Travel_booking/static/js/196.ec5e4f24.chunk.js.map",
     "324.a36549a1.chunk.js.map": "/Travel_booking/static/js/324.a36549a1.chunk.js.map",
-    "307.bfe40dc3.chunk.js.map": "/Travel_booking/static/js/307.bfe40dc3.chunk.js.map",
+    "253.93a37699.chunk.js.map": "/Travel_booking/static/js/253.93a37699.chunk.js.map",
     "95.e984fdfd.chunk.css.map": "/Travel_booking/static/css/95.e984fdfd.chunk.css.map",
     "95.77dd085e.chunk.js.map": "/Travel_booking/static/js/95.77dd085e.chunk.js.map",
     "681.b9892e98.chunk.js.map": "/Travel_booking/static/js/681.b9892e98.chunk.js.map",
     "913.016e2a66.chunk.js.map": "/Travel_booking/static/js/913.016e2a66.chunk.js.map",
     "428.c9aa49b0.chunk.js.map": "/Travel_booking/static/js/428.c9aa49b0.chunk.js.map",
-    "17.88726b2f.chunk.js.map": "/Travel_booking/static/js/17.88726b2f.chunk.js.map",
+    "17.7a3754a0.chunk.js.map": "/Travel_booking/static/js/17.7a3754a0.chunk.js.map",
     "284.574f1d2a.chunk.js.map": "/Travel_booking/static/js/284.574f1d2a.chunk.js.map",
     "545.b457743e.chunk.js.map": "/Travel_booking/static/js/545.b457743e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.02b3c324.css",
-    "static/js/main.9c8e51d9.js"
+    "static/css/main.897ba7d6.css",
+    "static/js/main.9aaa20b1.js"
   ]
 }

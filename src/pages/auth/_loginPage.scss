@@ -10,7 +10,7 @@ h2 {
   @include smart {
     font-size: 16px;
     padding-top: 10px;
-    margin-top: 10%;
+    margin-top: 5%;
   }
   @include tablet {
     padding-top: 20px;
@@ -21,7 +21,7 @@ h2 {
     margin-top: 10%;
   }
   @include largeDesk {
-   margin-top: 10%;
+   margin-top: 4%;
     font-size: 30px;
   }
 }

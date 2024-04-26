@@ -22,7 +22,7 @@ const Footer = () => {
      
         <p>06 01 23 45 67</p>
         <p>Email: iletaitunefoispmdr@gmail.com</p>
-        {/* Ajoutez d'autres informations de contact ou d'entreprise si nécessaire */}
+     
       </div>
     </footer>
   );

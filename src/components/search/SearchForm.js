@@ -1,75 +1,31 @@
-import { Formik, Field, Form, ErrorMessage } from "formik";
-import * as Yup from "yup";
+import React, { useState } from 'react';
 
-const validatedSchema = Yup.object({
-  location: Yup.string().required("Lieu requis"),
-  startDate: Yup.date().required("Date de départ requise"),
-  endDate: Yup.date().required("Date d'arrivée requise"),
-  numDays: Yup.number().required("Nombre de jours requis"),
-  accommodation: Yup.string().required("Type d'hébergement requis"),
-  numPeople: Yup.number().required("Nombre de personnes requis"),
-  amenities: Yup.string().required("Commodités requises"),
-});
+const SearchForm = ({ destinations, onSearch }) => {
+  const [destination, setDestination] = useState('');
+  const [date, setDate] = useState('');
+  const [price, setPrice] = useState('');
 
-const handleSubmit = (values, { setSubmitting }) => {
-  console.log(values);
-  setSubmitting(false);
-};
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Appelle la fonction de recherche fournie par les props avec les valeurs des champs du formulaire
+    onSearch({ destination, date, price });
+  };
 
-const SearchForm = () => {
   return (
-    <Formik
-      initialValues={{
-        location: "",
-        startDate: "",
-        endDate: "",
-        accommodation: "",
-        numPeople: "",
-        amenities: "",
-      }}
-      validationSchema={validatedSchema}
-      onSubmit={handleSubmit}
-    >
-      <Form className="search">
-        <div className="search__one">
-        <label htmlFor="location">Lieu :</label>
-        <Field type="text" id="location" name="location" />
-        <ErrorMessage name="location" component="div" />
-
-        <label htmlFor="startDate">Date de départ :</label>
-        <Field type="date" id="startDate" name="startDate" />
-        <ErrorMessage name="startDate" component="div" />
-
-        <label htmlFor="endDate">Date d'arrivée :</label>
-        <Field type="date" id="endDate" name="endDate" />
-        <ErrorMessage name="endDate" component="div" />
-        </div>
-        <div className="search__two">
-        <label htmlFor="accommodation">Type d'hébergement :</label>
-        <Field as="select" id="accommodation" name="accommodation">
-          <option value="">--Choisissez un type--</option>
-          <option value="hotel">Hôtel</option>
-          <option value="bungalow">Bungalow</option>
-          <option value="gite">Gîte</option>
-        </Field>
-        <ErrorMessage name="accommodation" component="div" />
-
-        <label htmlFor="numPeople">Nombre de personnes :</label>
-        <Field type="number" id="numPeople" name="numPeople" />
-        <ErrorMessage name="numPeople" component="div" />
-
-        <label htmlFor="amenities">Commodités :</label>
-        <Field as="select" id="amenities" name="amenities">
-          <option value="">--Choisissez une option--</option>
-          <option value="pool">Piscine</option>
-          <option value="spa">Spa</option>
-          <option value="punchBar">Bar à punch</option>
-        </Field>
-        <ErrorMessage name="amenities" component="div" />
-        </div>
-        <button type="submit">Rechercher</button>
-      </Form>
-    </Formik>
+    <form onSubmit={handleSubmit}>
+      <label htmlFor="destination">Destination:</label>
+      <select id="destination" value={destination} onChange={(e) => setDestination(e.target.value)}>
+        <option value="">Sélectionner une destination</option>
+        {destinations.map(destination => (
+          <option key={destination.id} value={destination.id}>{destination.name}</option>
+        ))}
+      </select>
+      <label htmlFor="date">Date:</label>
+      <input type="date" id="date" value={date} onChange={(e) => setDate(e.target.value)} />
+      <label htmlFor="price">Prix:</label>
+      <input type="number" id="price" value={price} onChange={(e) => setPrice(e.target.value)} />
+      <button type="submit">Rechercher</button>
+    </form>
   );
 };
 

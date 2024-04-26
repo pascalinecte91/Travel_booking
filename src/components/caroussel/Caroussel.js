@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import React, { useState } from "react";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const Caroussel = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -24,24 +24,40 @@ const Caroussel = ({ images }) => {
   };
 
   return (
-    <section className='caroussel'>
-      <button className='caroussel__prev' onClick={prevSlide} style={{ display: currentImageIndex === 0 ? 'none' : 'block' }}><FaArrowLeft /></button>
-      <div className='caroussel__images'>
-        {images.slice(currentImageIndex, currentImageIndex + 3).map((image, index) => (
-          <img key={index} src={image} alt="" onClick={() => openImage(index)} />
+    <section className="caroussel">
+      <button className="caroussel__prev" onClick={prevSlide}>
+        <FaArrowLeft />
+      </button>
+
+      <div className="caroussel__images">
+        {images.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt=""
+            onClick={() => openImage(index)}
+            className={`carousel-image ${
+              index === currentImageIndex ? "active" : ""
+            }`}
+          />
         ))}
       </div>
-      <button className='caroussel__next' onClick={nextSlide} style={{ display: currentImageIndex === images.length - 1 ? 'none' : 'block' }}><FaArrowRight /></button>
+
+      <button className="caroussel__next" onClick={nextSlide}>
+        <FaArrowRight />
+      </button>
+
       {enlargedImageIndex !== null && (
-        <div className='caroussel__enlarged' onClick={closeImage}>
-          <img src={images[enlargedImageIndex]} alt="" />
+        <div className="caroussel__enlarged" onClick={closeImage}>
+          <img
+            src={images[enlargedImageIndex]}
+            alt=""
+            className="enlarged-image"
+          />
         </div>
       )}
     </section>
-    
   );
-  
-  
 };
 
 export default Caroussel;

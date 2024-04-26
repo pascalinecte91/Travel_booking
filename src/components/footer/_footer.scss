@@ -5,15 +5,28 @@
   flex-direction: row;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   bottom: 0;
   width: 100%;
+  max-height: 80px;
+  font-size: 12px;
   &__social {
     font-size: 1.2rem;
   }
   &__links {
     margin-bottom: 1rem;
   }
+  &__info {
+    display: flex;
+    flex-direction: column;
+   
+    align-items: flex-end;
+  }
+}
+.footer__social a {
+  text-decoration: none;
+  margin-right: 10px;
 }
 
 .footer__links a {
@@ -22,4 +35,5 @@
   margin-right: 20px;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }

@@ -11,7 +11,6 @@ import polynesie from "assets/polynesie.jpg";
 import indonesie from "assets/indonesie_bali.jpg";
 import afrique from "assets/afrique_safari.jpg";
 import mexique from "assets/mexique.jpg";
-
 import caimens from "assets/ile_caimens.webp";
 
 // Initialise Chance.js
@@ -59,7 +58,7 @@ const HomePage = () => {
         <Caroussel images={images} />
       </section>
       <h1 className="title">Destinations populaires</h1>
-      <section className="destination">
+      <section className="destination" style={{ overflow: "auto" }}>
         {destinations.map((destination, index) => (
           <DestinationCard key={index} destination={destination} />
         ))}
@@ -67,5 +66,4 @@ const HomePage = () => {
     </>
   );
 };
-
 export default HomePage;
